@@ -1,0 +1,26 @@
+.button {
+  @include flex-center;
+
+  height: var(--button-height);
+  padding-inline: 90px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--ui-accent);
+  border: 1px solid var(--ui-accent);
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--ui-focus);
+  }
+
+  @include hover {
+    color: var(--ui-light);
+    background-color: var(--ui-hover);
+  }
+
+  &:active {
+    color: var(--ui-light);
+    background-color: var(--ui-active);
+    border: 1px solid var(--ui-active);
+  }
+}
