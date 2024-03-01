@@ -1,0 +1,43 @@
+.menu {
+  font-size: 20px;
+  color: var(--color-dark);
+  line-height: 1.15;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      inset: 0 -5px 0 -5px;
+      background-color: var(--ui-focus);
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    @include hover {
+      color: var(--ui-hover);
+    }
+
+    &:active {
+      color: var(--ui-active);
+    }
+  }
+}

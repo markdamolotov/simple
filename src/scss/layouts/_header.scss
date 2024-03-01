@@ -1,0 +1,30 @@
+.header {
+  padding-block: 28px 27px;
+  border-bottom: var(--border-bottom);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    margin-right: 60px;
+  }
+
+  &__actions-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__actions-search-button {
+  }
+
+  &__actions-login-button {
+  }
+}
