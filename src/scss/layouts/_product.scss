@@ -1,0 +1,22 @@
+.product {
+  padding-block: 90px;
+
+  &__inner {
+  }
+
+  &__title {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  &__item {
+    align-self: stretch;
+  }
+
+  &__card {
+  }
+}
