@@ -1,11 +1,28 @@
 :root {
   --color-light: #fff;
-  --color-dark: #000;
+  --color-dark: #4c5866;
+  --color-gray: #666666;
+  --color-muted: #b5b5bd;
+  --color-text: #85859b;
+  --color-bg: #ebebeb;
 
-  --font-family-base: '';
+  --ui-light: #fff;
+  --ui-dark: #4c5866;
+  --ui-accent: #7875fe;
+  --ui-hover: #7875fe;
+  --ui-focus: #dad9fb;
+  --ui-active: #4946b4;
 
-  --container-width: 1200px;
+  --font-family-base: 'Roboto';
+
+  --container-width: 1110px;
   --container-padding-x: 15px;
+
+  --button-height: 70px;
+
+  --border: 1px solid #c4c4c4;
+  --border-top: 1px solid #c0c0c0;
+  --border-bottom: 1px solid #dddddd;
 
   --transition-duration: 0.2s;
 }
