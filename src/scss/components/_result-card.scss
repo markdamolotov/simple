@@ -1,0 +1,28 @@
+.result-card {
+  @include flex-center;
+  
+  column-gap: 30px;
+  padding-top: 19px;
+  border-top: var(--border-top);
+  line-height: 1.5;
+
+  &__image-wrapper {
+  }
+
+  &__image {
+  }
+
+  &__body {
+    flex-shrink: 0;
+    flex-basis: 160px;
+  }
+
+  &__description {
+  }
+
+  span {
+    color: var(--color-gray);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,46 @@
+.result {
+  padding-block: 90px;
+  background-color: var(--color-bg);
+  
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+  }
+
+  &__list {
+    @include flex-center;
+
+    column-gap: 30px;
+  }
+
+  &__item {
+  }
+
+  &__body {
+    @include flex-center;
+
+    column-gap: 30px;
+  }
+
+  &__image-wrapper {
+  }
+
+  &__image {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-shrink: 0;
+    flex-basis: 350px;
+  }
+
+  &__title {
+    color: var(--color-gray);
+  }
+
+  &__description {
+  }
+}
