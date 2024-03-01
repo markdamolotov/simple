@@ -6,7 +6,19 @@
   border-top: var(--border-top);
   line-height: 1.5;
 
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  @include mobile {
+    flex-wrap: nowrap;
+  }
+
   &__image-wrapper {
+    @include mobile {
+      flex-basis: 130px;
+    }
   }
 
   &__image {
@@ -15,6 +27,14 @@
   &__body {
     flex-shrink: 0;
     flex-basis: 160px;
+
+    @include tablet-s {
+      flex-basis: 100%;
+    }
+
+    @include mobile {
+      flex-basis: 130px;
+    }
   }
 
   &__description {
