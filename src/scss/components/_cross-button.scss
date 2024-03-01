@@ -1,0 +1,34 @@
+.cross-button {
+  @include flex-center;
+  @include square(30px);
+  @include reset-button;
+
+  position: relative;
+  color: var(--ui-dark);
+
+  &::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: var(--ui-focus);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: var(--ui-hover);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @include hover {
+    color: var(--ui-hover);
+  }
+
+  &:active {
+    color: var(--ui-active);
+  }
+}
