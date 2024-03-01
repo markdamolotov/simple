@@ -5,6 +5,14 @@ body {
   line-height: 1.7;
   color: var(--color-text);
   background-color: var(--color-light);
+
+  @include tablet-s {
+    font-size: 16px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 a,
@@ -28,6 +36,14 @@ h1 {
   font-size: 60px;
   font-weight: 400;
   line-height: 1;
+
+  @include tablet {
+    font-size: 50px;
+  }
+
+  @include tablet-s {
+    font-size: 38px;
+  }
 }
 
 h2 {

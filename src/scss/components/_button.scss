@@ -23,4 +23,17 @@
     background-color: var(--ui-active);
     border: 1px solid var(--ui-active);
   }
+
+  @include tablet-s {
+    --button-height: 60px;
+
+    padding-inline: 60px;
+  }
+
+  @include mobile {
+    --button-height: 50px;
+
+    padding-inline: 38px;
+    font-size: 18px;
+  }
 }

@@ -1,10 +1,22 @@
 .hero {
   padding-top: 60px;
 
+  @include tablet-s {
+    padding-top: 20px;
+  }
+
+  @include mobile {
+    padding-block: 49px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__body {
@@ -15,20 +27,46 @@
     flex-shrink: 0;
     flex-basis: 445px;
     padding-top: 70px;
+
+    @include tablet {
+      flex-basis: 390px;
+      padding-top: 5px;
+    }
+
+    @include tablet-s {
+      row-gap: 20px;
+      flex-basis: 280px;
+      padding-top: 40px;
+    }
+
+    @include mobile {
+      row-gap: 15px;
+      flex-basis: 100%;
+      min-height: 230px;
+      padding: 0;
+    }
   }
 
   &__title {
+    text-wrap: balance;
     color: var(--color-dark);
   }
 
   &__description {
     line-height: 1.5;
+
+    @include mobile {
+      margin-bottom: 21px;
+    }
   }
 
   &__button {
   }
 
   &__image-wrapper {
+    @include mobile {
+      display: none;
+    }
   }
 
   &__image {
