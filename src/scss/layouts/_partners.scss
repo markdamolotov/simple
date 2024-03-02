@@ -1,0 +1,25 @@
+.partners {
+  padding-block: 90px;
+  background-color: var(--color-bg);
+
+  &__inner {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include flex-center;
+
+    grid-column: 3 span;
+    height: 135px;
+    padding-inline: 15px;
+    border: var(--border);
+  }
+
+  &__image {
+  }
+}
