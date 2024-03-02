@@ -1,0 +1,38 @@
+.sketchbook {
+  padding-top: 90px;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 30px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 8px;
+    flex-shrink: 0;
+    flex-basis: 350px;
+    padding-top: 24px;
+  }
+
+  &__title {
+    color: var(--color-gray);
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+
+  &__image-wrapper {
+  }
+
+  &__image {
+  }
+}
