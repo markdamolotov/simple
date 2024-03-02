@@ -1,6 +1,10 @@
 .product {
   padding-block: 90px;
 
+  @include tablet {
+    padding-block: 60px;
+  }
+
   &__inner {
   }
 
@@ -11,10 +15,27 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      row-gap: 60px;
+    }
   }
 
   &__item {
     align-self: stretch;
+
+    @include tablet {
+      flex-basis: 330px;
+    }
+
+    @include tablet-s {
+      flex-basis: 240px;
+    }
+
+    @include mobile {
+      flex-basis: 290px;
+    }
   }
 
   &__card {
