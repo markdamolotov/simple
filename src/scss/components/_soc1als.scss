@@ -1,0 +1,32 @@
+.soc1als {
+
+  &__list {
+    @include flex-center;
+
+    column-gap: 30px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    @include flex-center;
+    @include square(24px);
+
+    color: var(--ui-light);
+
+    &:focus-visible {
+      outline: none;
+      background-color: var(--ui-accent);
+      border-radius: 2px;
+    }
+  
+    @include hover {
+      color: var(--ui-focus);
+    }
+  
+    &:active {
+      color: var(--ui-accent);
+    }
+  }
+}

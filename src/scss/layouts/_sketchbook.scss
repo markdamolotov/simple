@@ -5,6 +5,10 @@
     padding-top: 60px;
   }
 
+  @include tablet-s {
+    padding-block: 60px;
+  }
+
   &__inner {
     display: flex;
     justify-content: center;
